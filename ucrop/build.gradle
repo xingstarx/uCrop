@@ -1,5 +1,8 @@
 apply plugin: 'com.android.library'
-apply from: '../mavenpush.gradle'
+//apply from: '../mavenpush.gradle'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group='com.yalantis.ucrop'
 
 android {
     compileSdkVersion 24
