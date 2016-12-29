@@ -262,7 +262,7 @@ public class TransformImageView extends ImageView {
     @Override
     protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
         super.onLayout(changed, left, top, right, bottom);
-        if (changed || (mBitmapDecoded && !mBitmapLaidOut)) {
+        if (changed || mBitmapDecoded || mBitmapLaidOut) {
 
             left = getPaddingLeft();
             top = getPaddingTop();
