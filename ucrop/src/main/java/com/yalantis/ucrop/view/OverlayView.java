@@ -461,6 +461,22 @@ public class OverlayView extends View {
     }
 
     /**
+     * when used circleDimmedLayer , the width is acting on The border of the circle
+     * @param width
+     */
+    public void setCircleDimmedLayoutBorderWidth(int width) {
+        mDimmedStrokePaint.setStrokeWidth(width);
+    }
+
+    /**
+     * when used circleDimmedLayer , the color is acting on The border of the circle
+     * @param color
+     */
+    public void setCircleDimmedLayoutBorderColor(@ColorInt int color) {
+        mDimmedStrokePaint.setColor(color);
+    }
+
+    /**
      * This method draws crop bounds (empty rectangle)
      * and crop guidelines (vertical and horizontal lines inside the crop bounds) if needed.
      *
