@@ -15,6 +15,27 @@
 2. 对于OverLayView是圆角下，支持自定义圆环的borderWidth,borderColor
 
 
+Add it in your root build.gradle at the end of repositories:
+
+``
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+``
+
+Add the dependency in module build.gradle
+
+```
+dependencies {
+	        compile 'com.github.xingstarx:uCrop:v0.1.2'
+	}
+```
+
+
+
 ## License
 
     Copyright 2016, Yalantis
